@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Description } from './Description';
 import { Stats } from './Stats';
 
-export function Profile({user}) {
+export const Profile = ({ user }) => {
   return (
     <div>
       <Description
@@ -17,20 +17,20 @@ export function Profile({user}) {
         views={user.stats.views}
         likes={user.stats.likes}
       />
-      </div>
+    </div>
   );
-}
+};
 
 Profile.propTypes = {
   user: PropTypes.exact({
-  username: PropTypes.string,
-  tag: PropTypes.string,
-  location: PropTypes.string,
-  avatar: PropTypes.string,
-  stats: PropTypes.exact({
-    followers: PropTypes.number,
-    views: PropTypes.number,
-    likes: PropTypes.number,
-  }),
-})
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    stats: PropTypes.exact({
+      followers: PropTypes.number.isRequired,
+      views: PropTypes.number.isRequired,
+      likes: PropTypes.number.isRequired,
+    }).isRequired,
+  }).isRequired,
 };
