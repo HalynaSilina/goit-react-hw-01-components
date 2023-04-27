@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 
 export const Item = ({ label, percentage }) => {
   return (
-    <li>
+    <>
       <span>{label}</span>
       <span>{percentage}</span>
-    </li>
+    </>
   );
 };
 
