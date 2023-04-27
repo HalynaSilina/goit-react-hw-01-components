@@ -14,10 +14,6 @@ export const App = () => {
         height: '100vh',
         padding: 40,
         margin: 20,
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
         color: '#010101',
       }}
     >
