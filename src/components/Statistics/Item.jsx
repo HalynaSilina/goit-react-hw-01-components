@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import css from './Item.module.css';
 
 export const Item = ({ label, percentage }) => {
   return (
     <>
-      <span>{label}</span>
-      <span>{percentage}</span>
+      <span className={css.label}>{label}</span>
+      <span className={css.percentage}>{percentage}%</span>
     </>
   );
 };
