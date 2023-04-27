@@ -1,10 +1,15 @@
+
+import userData from 'user.json';
 import { Profile } from "components/Profile/Profile";
+
 
 export const App = () => {
   return (
     <div
       style={{
         height: '100vh',
+        padding: 40,
+        margin: 20,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -12,7 +17,7 @@ export const App = () => {
         color: '#010101'
       }}
     >
-    <Profile/>
+    <Profile user={userData}/>
     </div>
   );
 };

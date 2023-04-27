@@ -1,19 +1,36 @@
 import PropTypes from 'prop-types';
-import user from './user.json';
+
 import { Description } from './Description';
 import { Stats } from './Stats';
 
-export function Profile({username, tag, location, avatar, stats}) {
+export function Profile({user}) {
   return (
-    (
-      <div>
-        <Description username={username} tag={tag} location={location} avatar={avatar}/>
+    <div>
+      <Description
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+      />
+      <Stats
+        followers={user.stats.followers}
+        views={user.stats.views}
+        likes={user.stats.likes}
+      />
       </div>
-    ),
-    (
-      <ul>
-        <Stats />
-      </ul>
-    )
   );
 }
+
+Profile.propTypes = {
+  user: PropTypes.exact({
+  username: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+  stats: PropTypes.exact({
+    followers: PropTypes.number,
+    views: PropTypes.number,
+    likes: PropTypes.number,
+  }),
+})
+};
