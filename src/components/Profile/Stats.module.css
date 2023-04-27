@@ -8,7 +8,8 @@
   flex-direction: column;
   flex-basis: calc(100%/3);
   padding: 8px;
-  border: 1px groove rgba(190,194,94,0.5)
+  border: 1px groove rgba(190,194,94,0.5);
+  
 }
 .label {
   font-size: 14px;
