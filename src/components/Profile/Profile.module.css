@@ -1,0 +1,14 @@
+.profile {
+  max-width: 460px;
+  max-height: 520px;
+  margin-bottom: 30px;
+
+  border-radius: 5%;
+  box-shadow: inset -1px -6px 75px -31px rgba(190, 194, 94, 1);
+  background-color: #f2fedc;
+  border: 1px groove rgba(190, 194, 94, 0.5);
+  transition: box-shadow 250ms ease;
+}
+.profile:hover {
+  box-shadow: -4px 7px 119px 21px rgba(190, 194, 94, 1);
+}

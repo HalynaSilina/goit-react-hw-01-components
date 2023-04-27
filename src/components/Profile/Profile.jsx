@@ -3,9 +3,11 @@ import PropTypes from 'prop-types';
 import { Description } from './Description';
 import { Stats } from './Stats';
 
+import css from './Profile.module.css';
+
 export const Profile = ({ user }) => {
   return (
-    <div>
+    <div className={css.profile}>
       <Description
         username={user.username}
         tag={user.tag}

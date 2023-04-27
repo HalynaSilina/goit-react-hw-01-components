@@ -1,0 +1,22 @@
+.stats {
+  display: flex;
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(100%/3);
+  padding: 8px;
+  border: 1px groove rgba(190,194,94,0.5)
+}
+.label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.quantity {
+  font-size: 12px;
+  color: #000;
+  font-weight: 500;
+}

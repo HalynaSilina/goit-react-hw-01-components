@@ -6,19 +6,15 @@ import { Profile } from './Profile/Profile';
 import { Statistics } from './Statistics/Statistics';
 import { FriendsList } from './FriendList/FriendList';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
+import css from './App.module.css';
 
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        padding: 40,
-        margin: 20,
-        color: '#010101',
-      }}
-    >
+    <div className={css.container}>
+      <div className={css.sideblocks}>
       <Profile user={userData} />
       <Statistics data={statisticData} title="Upload stats" />
+      </div>
       <FriendsList friends={friendsData}/>
       <TransactionHistory items={transactionsData}/>
     </div>
