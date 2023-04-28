@@ -1,7 +1,28 @@
 .status {
-    display: block;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: #CB2C42;
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+  border-radius: 50%;
+  background-color: #cb2c42;
+}
+.status.online {
+  background-color: #00917b;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  border-radius: 50%;
+  background-color: #005b4b;
+  transition: transform 250ms ease;
+}
+.avatar:hover {
+  transform: scale(1.1);
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 500;
 }
