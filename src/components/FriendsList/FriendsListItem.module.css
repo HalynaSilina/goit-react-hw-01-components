@@ -1,6 +1,7 @@
 .status {
-    width: 10px;
-    height: 10px;
+    display: block;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     background-color: #CB2C42;
 }
