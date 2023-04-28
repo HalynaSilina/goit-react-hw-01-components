@@ -7,3 +7,11 @@
     font-weight: 600;
     background-color:#FFC1C0;
 }
+.row {
+    padding: 4px;
+}
+
+th {
+    padding: 4px 8px;
+    margin-right: 12px;
+}
