@@ -12,11 +12,13 @@ export const App = () => {
   return (
     <div className={css.container}>
       <div className={css.sideblocks}>
-      <Profile user={userData} />
-      <Statistics data={statisticData} title="Upload stats" />
+        <Profile user={userData} />
+        <Statistics data={statisticData} title="Upload stats" />
       </div>
-      <FriendsList friends={friendsData}/>
-      <TransactionHistory items={transactionsData}/>
+      <FriendsList friends={friendsData} />
+      <div className={css.table}>
+        <TransactionHistory items={transactionsData} />
+      </div>
     </div>
   );
 };
