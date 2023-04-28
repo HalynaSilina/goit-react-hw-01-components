@@ -1,0 +1,9 @@
+.transactions {
+  max-height: 90vh;
+  overflow-y: scroll;
+}
+.head {
+    font-size: 24px;
+    font-weight: 600;
+    background-color:#FFC1C0;
+}
